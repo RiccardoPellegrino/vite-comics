@@ -116,7 +116,7 @@ header {
             }
 
             &:hover {
-                color: lighten($lightblue, 40%);
+                color: ($lightblue);
             }
         }
     }
