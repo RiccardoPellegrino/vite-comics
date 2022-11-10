@@ -1,11 +1,11 @@
 <template>
     <header>
         <nav class="container">
-            <div class="logo">
-                <a href="#">
-                    <img src="../assets/img/dc-logo.png" alt="logoDc">
-                </a>
-            </div>
+
+            <a href="#">
+                <img src="../assets/img/dc-logo.png" alt="logoDc">
+            </a>
+
             <ul>
                 <li v-for="(link, index) in links" :key="index">
                     <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
@@ -82,7 +82,7 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 
 header {
-    text-align: center;
+
     width: 100%;
     background-color: $lightwhite;
     height: 140px;
@@ -96,27 +96,30 @@ header {
 
     ul {
         list-style: none;
-        line-height: 100px;
-
+        height: 100%;
+        line-height: 137px;
         @include dflex;
 
-        li a {
-            height: 100px;
-            display: inline-block;
-            padding: 0 1rem;
-            text-decoration: none;
-            font-weight: 550;
-            color: $lightblack;
-            transition: background 0.3s;
+        li {
 
+            &.active,
+            &:hover,
+            &:active {
+                border-bottom: 3px solid $lightblue;
 
+                a {
+                    color: $lightblue;
 
-            &.active {
-                border-bottom: 1px solid blue;
+                }
             }
 
-            &:hover {
-                color: ($lightblue);
+            a {
+                font-size: 16px;
+                margin-right: 5px;
+                margin-left: 5px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
             }
         }
     }
