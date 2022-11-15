@@ -3,6 +3,7 @@
     <NavComponent />
   </nav>
   <div>
+    <JumboComponent />
     <SectionComponent />
   </div>
   <div>
@@ -22,11 +23,19 @@
 import DcComponent from './components/DcComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import IconComponent from './components/IconComponent.vue';
+import JumboComponent from './components/JumboComponent.vue';
 import NavComponent from './components/NavComponent.vue';
 import SectionComponent from './components/SectionComponent.vue';
 
 export default {
-  components: { NavComponent, SectionComponent, IconComponent, DcComponent, FooterComponent }
+  components: {
+    NavComponent,
+    SectionComponent,
+    IconComponent,
+    DcComponent,
+    FooterComponent,
+    JumboComponent
+  }
 }
 </script>
 

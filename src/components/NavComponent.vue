@@ -3,7 +3,7 @@
         <nav class="container">
 
             <a href="#">
-                <img src="../assets/img/dc-logo.png" alt="logoDc">
+                <img src="../../public/img/dc-logo.png" alt="logoDc">
             </a>
 
             <ul>
@@ -101,25 +101,27 @@ header {
         @include dflex;
 
         li {
+            margin-right: 10px;
+            list-style: none;
+            text-transform: uppercase;
 
-            &.active,
-            &:hover,
-            &:active {
-                border-bottom: 3px solid $lightblue;
+            font-size: 1em;
 
-                a {
-                    color: $lightblue;
-
-                }
-            }
 
             a {
-                font-size: 16px;
-                margin-right: 5px;
-                margin-left: 5px;
-                font-weight: bold;
-                color: black;
                 text-decoration: none;
+                color: $lightblack;
+                height: 50px;
+                padding-bottom: 50px;
+
+                &.active,
+                &:hover,
+                &:active {
+                    color: $lightblue;
+                    border-bottom: 5px solid $lightblue;
+                }
+
+
             }
         }
     }
