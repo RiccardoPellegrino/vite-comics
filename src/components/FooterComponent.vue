@@ -86,7 +86,7 @@ export default {
                 list-style: none;
 
                 a {
-                    color: $bgFooter;
+                    color: #a39c9c;
                     ;
                     text-decoration: none;
 
