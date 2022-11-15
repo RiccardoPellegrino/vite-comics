@@ -39,6 +39,7 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 
 .contenitore-init {
+    margin-top: 10px;
     max-width: 1170px;
     padding: 1rem;
     display: flex;

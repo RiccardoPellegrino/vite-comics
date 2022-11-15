@@ -9,9 +9,6 @@
   <div>
     <IconComponent />
   </div>
-  <div>
-    <DcComponent />
-  </div>
   <footer>
     <FooterComponent />
   </footer>
