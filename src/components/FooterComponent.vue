@@ -131,7 +131,7 @@ export default {
 
         span {
             margin-right: 10px;
-            color: $lightblue ;
+            color: #1460EA;
             font-size: 2em;
         }
 
