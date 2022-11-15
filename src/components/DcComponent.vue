@@ -1,5 +1,5 @@
 <template>
-    SONO DC COMPONENT
+
 </template>
 
 <script>
